@@ -3,7 +3,7 @@ import os
 
 recognition = sr.Recognizer()
 default_mic = sr.Microphone()
-r2 = True
+voice_control = True
 
 
 def activate(phrase='hello'):
@@ -26,10 +26,11 @@ def activate(phrase='hello'):
         Exception
 
 
-while r2:
+while voice_control:
     activate()
     while activate:
         with default_mic as source:
+            recognition.adjust_for_ambient_noise(source)
             audio = recognition.listen(source)
             try:
                 output = recognition.recognize_google(audio)
