@@ -22,7 +22,7 @@ def activate(phrase='online', active=None):
             if activate_output == phrase:
                 print('Listening')
                 speaker.Speak("Im listening")
-                speaker.Speak("say, shutdown computer, restart computer, name")
+                speaker.Speak("please say, shutdown computer, restart computer, name, tell me a joke")
                 return False
             else:
                 print('Not Listening')
