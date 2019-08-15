@@ -3,6 +3,7 @@ import os
 import win32com
 import win32com.client as wincl
 import time
+import pyjokes
 
 recognition = sr.Recognizer()
 default_mic = sr.Microphone()
@@ -47,6 +48,8 @@ def control():
             os.system('shutdown /r /t 1')
         elif output == 'name':
             name()
+        elif output == 'tell me a joke':
+            joke()
         else:
             print(output)
 
@@ -59,3 +62,8 @@ def name():
         name = recognition.recognize_google(audio)
         speaker.Speak(f"Hello {name}")
     except:Exception
+
+
+def joke():
+    jokes = (pyjokes.get_joke())
+    speaker.Speak(jokes)
