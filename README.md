@@ -17,3 +17,10 @@ Apart from Microsoft build tools and python 3.6 all can be installed with PIP
 ## Guides used
 - [The Ultimate Guide To Speech Recognition With Python](https://realpython.com/python-speech-recognition/)
 - [Text to speech](https://pythonprogramminglanguage.com/text-to-speech/)
+
+## How to use
+- Make sure you have a microphone plugged in and set as default
+- Run the main.py file
+- Use the keyword 'online' to activate the voice control system
+- Listen to the available commands
+- Have fun 
