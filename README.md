@@ -25,4 +25,4 @@ Apart from Microsoft build tools and python 3.6 all can be installed with PIP
 - Listen to the available commands
 - Have fun
 
-## Please note, the pywin32 uses windows as the speech agent, im unaware if this will work on other platforms.
+#### Please note, the pywin32 uses windows as the speech agent, im unaware if this will work on other platforms.
